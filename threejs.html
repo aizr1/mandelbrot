@@ -22,10 +22,10 @@
             void main () {
                 vec2 fractal = pos;
 
-                for (int i = 0; i < 20; i++) {
+                for (int i = 0; i < 200; i++) {
                     fractal = pos + vec2(
                         fractal.x * fractal.x - fractal.y * fractal.y,
-                        2.0 * fractal.x * fractal.y
+                        5.0 * fractal.x * fractal.y
                     );
 
                     // interpolate fractal color over position
